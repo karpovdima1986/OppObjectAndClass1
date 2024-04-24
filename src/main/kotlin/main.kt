@@ -30,7 +30,7 @@ data class Date(val date: Long = System.currentTimeMillis()/ 1000) //String =jav
 
 
 object  WallService{
-    private var posts = emptyArray<Post>()
+    var posts = emptyArray<Post>()
     private var lastPostId = 0
 
     fun add(post: Post,): Post{
